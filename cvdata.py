@@ -2,7 +2,7 @@ import cv2
 import numpy as np
 import  imutils
 # Load image, grayscale, and adaptive threshold
-image = cv2.imread('screen0.png')
+image = cv2.imread('screen1.png')
 image = cv2.resize(image,(400,900))
 image = image[330:680,30:370]
 large_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
