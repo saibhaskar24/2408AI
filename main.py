@@ -24,7 +24,7 @@ with open(f'screen.png','wb') as f:
 image = cv.imread(f"screen.png")
 ge = cv.imread('screen.png')
 image = cv.resize(image,(400,900))
-image = image[320:600,20:380]
+image = image[320:700,20:380]
 cv.imwrite("screen.png",image)
 
 
