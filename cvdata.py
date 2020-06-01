@@ -3,7 +3,9 @@ from imutils import contours
 import numpy as np
 
 # Load image, grayscale, and adaptive threshold
-image = cv2.imread('screen.png')
+image = cv2.imread('screen1.png')
+image = cv2.resize(image,(400,900))
+image = image[320:600,20:380]
 gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 thresh = cv2.adaptiveThreshold(gray,255,cv2.ADAPTIVE_THRESH_GAUSSIAN_C, cv2.THRESH_BINARY_INV,57,5)
 
