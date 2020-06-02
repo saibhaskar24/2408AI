@@ -13,7 +13,7 @@ def scanimage(image):
 
     plt.show()
 
-    l = ['2.png','4.png','8.png','16.png','32.png','64.png','128.png','256.png','512.png','1024.png']
+    l = ['2.png','4.png','8.png','16.png','32.png','64.png','128.png','256.png','512.png','1024.png','2408.png']
 
     def mydata(imgg):
         val = 0

@@ -31,6 +31,8 @@ while True:
     # image = cv.imread(f"live.png")
     image = cv.resize(img,(400,900))
     image = image[328:690,28:370]
+
+
     # cv.imwrite("live.png",image)
     # cv.imshow("image",image)
     # cv.waitKey()
@@ -38,7 +40,7 @@ while True:
     
 
     array = divimage.scanimage(image)
-    move = manager.runa(array,500)
+    move = manager.runa(array,700)
     print(array)
     print(move)
 
