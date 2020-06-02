@@ -38,7 +38,7 @@ while True:
     
 
     array = divimage.scanimage(image)
-    move = manager.runa(array,200)
+    move = manager.runa(array,500)
     print(array)
     print(move)
 
