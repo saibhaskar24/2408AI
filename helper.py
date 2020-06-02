@@ -26,7 +26,12 @@ def availableCell(myArray):
 def addRandomData(grid):
     cord = availableCell(grid)
     if cord != -1:
-        grid[cord[0]][cord[1]] = 2
+        k = random.randint(1,10)
+        v = 2
+        if k > 8:
+            v = 4
+        grid[cord[0]][cord[1]] = v
+    
 
 
 def movesavilable(grid):
