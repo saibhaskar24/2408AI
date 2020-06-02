@@ -33,7 +33,7 @@ while True:
     image = cv.resize(image,(400,900))
     image = image[328:690,28:370]
     # cv.imshow("Image",image)
-    # cv.imwrite("screen3.png",image)
+    cv.imwrite("live.png",image)
     # cv.imshow("image",image)
     # cv.waitKey()
     # image = cv.imread('myimage.png')
@@ -48,9 +48,9 @@ while True:
         device.shell(f'input swipe 500 2000 500 1000 100')
     if move['move'] == 'd':
         device.shell(f'input swipe 500 1000 500 2000 100')
-    if move['move'] == 'l':
-        device.shell(f'input swipe 200 1000 700 1000 100')  
     if move['move'] == 'r':
+        device.shell(f'input swipe 200 1000 700 1000 100')  
+    if move['move'] == 'l':
         device.shell(f'input swipe 700 1000 200 1000 100') 
     if k == 20:
         break

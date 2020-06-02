@@ -13,7 +13,7 @@ def scanimage(image):
 
     plt.show()
 
-    l = ['2.png','4.png','8.png','32.png','64.png','128.png']
+    l = ['2.png','4.png','8.png','16.png','32.png','64.png','128.png']
 
     def mydata(imgg):
         val = 0
@@ -51,6 +51,7 @@ def scanimage(image):
         array.append(row)
     return array
 
-# image = cv2.imread('myimage.png')
+# image = cv2.imread('live.png')
 
 # myarray = scanimage(image)
+# print(myarray)
