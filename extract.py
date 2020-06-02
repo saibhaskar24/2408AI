@@ -6,9 +6,9 @@ image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 
 
-i = image[300:330,197:234]
+i = image[120:150,5:80]
 # cv2.imshow("myimage",i)
 plt.imshow(i)
-cv2.imwrite("16.png",i)
+cv2.imwrite("1024.png",i)
 # cv2.waitKey()
 plt.show()

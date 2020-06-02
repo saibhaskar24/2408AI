@@ -9,7 +9,7 @@ image = cv2.imread('live.png')
 image = image
 large_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-small_image = cv2.imread('data/16.png')
+small_image = cv2.imread('data/1024.png')
 small_image= cv2.cvtColor(small_image, cv2.COLOR_BGR2GRAY)
 w, h = small_image.shape[::-1]
 
