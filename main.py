@@ -25,7 +25,8 @@ image = cv.imread(f"screen3.png")
 ge = cv.imread('screen3.png')
 image = cv.resize(image,(400,900))
 image = image[320:700,20:380]
-cv.imwrite("screen3.png",image)
+cv.imshow("Image",image)
+# cv.imwrite("screen3.png",image)
 
 
 
