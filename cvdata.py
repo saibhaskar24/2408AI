@@ -4,7 +4,7 @@ import numpy as np
 # Load image, grayscale, and adaptive threshold
 image = cv2.imread('myimage.png')
 # image = cv2.resize(image,(400,900))
-image = image[280:340,273:353]
+image = image
 large_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
 small_image = cv2.imread('data/32.png')
