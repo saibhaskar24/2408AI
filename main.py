@@ -19,13 +19,13 @@ print("Connected devices:",devices)
 print(devices)
 
 image = device.screencap()
-with open(f'screen.png','wb') as f:
+with open(f'screen3.png','wb') as f:
     f.write(image)
-image = cv.imread(f"screen.png")
-ge = cv.imread('screen.png')
+image = cv.imread(f"screen3.png")
+ge = cv.imread('screen3.png')
 image = cv.resize(image,(400,900))
 image = image[320:700,20:380]
-cv.imwrite("screen.png",image)
+cv.imwrite("screen3.png",image)
 
 
 

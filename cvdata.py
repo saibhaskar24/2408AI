@@ -2,12 +2,12 @@ import cv2
 import numpy as np
 
 # Load image, grayscale, and adaptive threshold
-image = cv2.imread('screen2.png')
-image = cv2.resize(image,(400,900))
-image = image[330:680,30:370]
+image = cv2.imread('screen3.png')
+# image = cv2.resize(image,(400,900))
+image = image
 large_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-small_image = cv2.imread('data/2.png')
+small_image = cv2.imread('data/256.png')
 small_image= cv2.cvtColor(small_image, cv2.COLOR_BGR2GRAY)
 w, h = small_image.shape[::-1]
 
