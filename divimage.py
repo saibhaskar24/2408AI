@@ -5,10 +5,11 @@ from copy import deepcopy
 
 
 def scanimage(image):
+    image = cv2.resize(image,(350,350))
+    image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
 
-    
-
-    plt.imshow(image)
+    # plt.imshow(image)
+    # plt.imshow(cv2.imread('myimage.png'))
 
     plt.show()
 
@@ -44,14 +45,12 @@ def scanimage(image):
         row = []
         for j in range(0,340,91):
             img = image[i:80+i,j:80+j]
+            # cv2.imshow("Split", img)
+            # cv2.waitKey()
             row.append(mydata(img))
         array.append(row)
-
-    print(array)
     return array
 
-image = cv2.imread('myimage.png')
-image = cv2.resize(image,(350,350))
-image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+# image = cv2.imread('myimage.png')
 
-myarray = scanimage(image)
+# myarray = scanimage(image)
