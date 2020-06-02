@@ -45,8 +45,8 @@ def scanimage(image):
         row = []
         for j in range(0,340,91):
             img = image[i:80+i,j:80+j]
-            # cv2.imshow("Split", img)
-            # cv2.waitKey()
+            cv2.imshow("Split", img)
+            cv2.waitKey()
             row.append(mydata(img))
         array.append(row)
     return array
