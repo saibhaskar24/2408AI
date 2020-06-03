@@ -188,24 +188,27 @@ counter = 0
 moveno = 0
 try:
     while True:
+        printgrid()
         aialgo = manager.runa(myArray)
-        # user_input = input("u for upward direction, d for downwards, l for left and r for Right : ")
         user_input = aialgo['move']
+        print(aialgo)
+        # user_input = input("u for upward direction, d for downwards, l for left and r for Right : ")
         move(user_input)
         pos = randomAvailableCell(myArray)
         if pos == -1:
             break
         else:
             myArray[pos[0]][pos[1]] = 2
-        if reachedmax():
-            printgrid()
-            break
-        counter+=1
+        time.sleep(2)
+        # if reachedmax():
+        #     printgrid()
+        #     break
         moveno+=1
-        if counter == 100:
-            printgrid()
-            print("Moves",moveno)
-            counter = 0
+        # counter+=1
+        # if counter == 100:
+        #     printgrid()
+        #     print("Moves",moveno)
+        #     counter = 0
         moveno+=1
 except :
     printgrid()
